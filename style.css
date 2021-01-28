@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: 
+        repeating-linear-gradient(0deg,#fff 0%,#fff 50%,#000 50%, #000 100%),/*crear imagen en horizontal*/
+        repeating-linear-gradient(90deg,#fff 0%,#fff 50%,#000 50%, #000 100%);/*craer imagen en vertical*/
+    background-size: 30px 30px;/*tamaño de imagenes*/
+    background-blend-mode: difference;
+}
+span{
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url(FC%20DK.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    pointer-events: none;
+    border-radius: 50%;
+}

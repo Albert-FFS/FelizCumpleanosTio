@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Cumpleaños del tio">
+        <meta property="og:url" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="FELIZ CUMPLEAÑOS">
+        <meta property="og:description" content="Cumpleaños del tio">
+        <meta property="og:image" content="">
+        <title>FEELIZ CUMPLEAÑOS TIO</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <script type="text/javascript">
+            let t =0;
+            function mensaje(){
+                if(t===5){
+                    alert('Mueve el cursor sobre la pantalla \n veras una sorpresa.');
+                }
+                if(t===15){
+                    alert('!!!Feeeliiz cumpleaños Tio¡¡¡ \n te mando un fuerte abrazo \n y que te la pases muy bien. \n \n ¡¡SALUDOS A TODOS!!');
+                }
+            }
+            function conteo(){
+                t++;
+                mensaje();
+            }
+            setInterval(conteo,1000);
+            document.addEventListener('mousemove',function(e){
+                const body = document.querySelector('body');
+                const burbuja = document.createElement('span');
+                burbuja.style.left = -75 + e.offsetX + 'px';
+                burbuja.style.top = -75 + e.offsetY + 'px';
+                body.appendChild(burbuja);
+            });
+        </script>
+    </body>
+</html>
